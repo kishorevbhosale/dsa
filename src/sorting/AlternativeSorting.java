@@ -1,4 +1,4 @@
-package array;
+package sorting;
 
 public class AlternativeSorting {
     public static void main(String[] args) {
