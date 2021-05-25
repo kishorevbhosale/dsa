@@ -7,7 +7,7 @@ public class SearchInSortedRotatedArray {
         boolean flag = false;
         int tmp = arr[0];
         if (tmp > key) {
-            for (int i = arr.length-1; i > 0; i--) {
+            for (int i = arr.length - 1; i > 0; i--) {
                 if (arr[i] == key) {
                     flag = true;
                     System.out.println(key + " found at index : " + i);

@@ -3,7 +3,7 @@ package array;
 public class ReverseArray {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5, 6, 7};
-        String[] arr1 = {"This","is","a","String"};
+        String[] arr1 = {"This", "is", "a", "String"};
         System.out.println("Before reverse...");
         printArray(arr1);
         reverseArray(arr1);
@@ -17,13 +17,13 @@ public class ReverseArray {
         }
     }
 
-    public static void reverseArray(String[] arr){;
+    public static void reverseArray(String[] arr) {
         int start = 0;
-        int end = arr.length-1;
-        while (start<end){
+        int end = arr.length - 1;
+        while (start < end) {
             String tmp = arr[start];
-            arr[start]= arr[end];
-            arr[end]=tmp;
+            arr[start] = arr[end];
+            arr[end] = tmp;
             start++;
             end--;
         }
