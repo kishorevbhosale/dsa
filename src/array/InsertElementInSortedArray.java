@@ -12,11 +12,11 @@ public class InsertElementInSortedArray {
         System.out.println("Array before inserting key : " + Arrays.toString(arr));
         System.out.println("Enter key : ");
         int key = Integer.parseInt(br.readLine());
-        Integer[] result = insertAtIndex(key, arr);
+        Integer[] result = insert(key, arr);
         System.out.println("Array after inserting key : " + Arrays.toString(result));
     }
 
-    public static Integer[] insertAtIndex(int key, Integer[] arr) {
+    public static Integer[] insert(int key, Integer[] arr) {
         Integer[] result = new Integer[arr.length + 1];
         int i = arr.length - 1;
         int j = result.length - 1;

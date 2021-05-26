@@ -7,7 +7,7 @@ public class RecursionTypes {
         System.out.println("\n\nHead Recursion output : ");
         headRecursion(5);
         System.out.println("\n\nTree Recursion output :");
-        treeRecursion(3);
+        treeRecursion(5);
         System.out.println("\n\nNested Recursion output :");
         System.out.println("nestedRecursion(95) : " + nestedRecursion(95));
         System.out.println("\nIndirect Recursion output : ");
@@ -32,8 +32,8 @@ public class RecursionTypes {
 
     private static void treeRecursion(int i) {
         if (i > 0) {
-            System.out.print(i + ",");
             treeRecursion(i - 1);
+            System.out.print(i + ",");
             treeRecursion(i - 1);
         }
     }
