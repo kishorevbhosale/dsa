@@ -21,21 +21,21 @@ public class LeftRotateArray {
         System.out.println(Arrays.toString(arr1));
         System.out.println("\nBefore rotate...");
         System.out.println(Arrays.toString(arr));
-        rightRotateByK(arr,d);
+        rightRotateByK(arr, d);
         System.out.println("\nAfter rotate...");
         System.out.println(Arrays.toString(arr));
 
     }
 
     private static void rightRotateByK(int[] arr, int k) {
-        while (k>0){
-            int i = arr.length-1;
+        while (k > 0) {
+            int i = arr.length - 1;
             int tmp = arr[i];
-            while (i>0){
-                arr[i]=arr[i-1];
+            while (i > 0) {
+                arr[i] = arr[i - 1];
                 i--;
             }
-            arr[0]=tmp;
+            arr[0] = tmp;
             k--;
         }
     }
