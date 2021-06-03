@@ -9,7 +9,7 @@ public class RemoveDuplicatesFromSorted {
         Node second = new Node(13);
         Node third = new Node(14);
         Node fourth = new Node(16);
-        Node fifth = new Node(19);
+        Node fifth = new Node(16);
 
         llist.head.next = second;
         second.next = third;
