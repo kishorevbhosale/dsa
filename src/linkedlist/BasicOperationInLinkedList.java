@@ -7,6 +7,15 @@ import java.io.InputStreamReader;
 public class BasicOperationInLinkedList {
     Node head;
 
+    static class Node {
+        int data;
+        Node next;
+
+        Node(int data) {
+            this.data = data;
+        }
+    }
+
     public static void main(String[] args) {
         BasicOperationInLinkedList list = new BasicOperationInLinkedList();
         list.head = new Node(1);
@@ -143,12 +152,5 @@ public class BasicOperationInLinkedList {
         System.out.println("null\n");
     }
 
-    static class Node {
-        int data;
-        Node next;
 
-        Node(int data) {
-            this.data = data;
-        }
-    }
 }
