@@ -2,13 +2,12 @@ package leetcode;
 
 public class ReverseInteger {
     public static void main(String[] args) {
-        reverse(-1563847412);
+        System.out.println(reverse(1563347412));
 
     }
 
     public static int reverse(int x) {
         double flag = x>0?1:(-1);
-        final int num = x;
         x = Math.abs(x);
         double result = 0;
         int rem = 0;
