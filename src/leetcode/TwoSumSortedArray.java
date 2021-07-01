@@ -1,7 +1,6 @@
 package leetcode;
 
 import java.util.Arrays;
-import java.util.Collections;
 
 public class TwoSumSortedArray {
     public static void main(String[] args) {
@@ -19,6 +18,6 @@ public class TwoSumSortedArray {
             else
                 j--;
         }
-        return null;
+        return new int[]{};
     }
 }
