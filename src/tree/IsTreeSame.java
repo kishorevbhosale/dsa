@@ -28,6 +28,16 @@ public class IsTreeSame {
         return isTreeEqual(p.left, q.left) && isTreeEqual(p.right, q.right);
     }
 
+    public static boolean checkSymmetric(TreeNode p, TreeNode q){
+        if(p==null && q==null) return true;
+        if(p==null || q==null) return false;
+        return (p.val == q.val) && checkSymmetric(p.left,q.right) && checkSymmetric(p.right,q.left);
+    }
+
+    public static boolean isSymmetric(TreeNode root) {
+        return checkSymmetric(root,root);
+    }
+
     public static void inOrderTraversal(TreeNode node) {
         if (node == null) return;
         inOrderTraversal(node.left);
@@ -37,23 +47,28 @@ public class IsTreeSame {
 
     public static void main(String[] args) {
         IsTreeSame rootNode = new IsTreeSame();
-        rootNode.root = new TreeNode(15);
-        rootNode.root.left = new TreeNode(5);
-        rootNode.root.left.left = new TreeNode(1);
-        rootNode.root.left.right = new TreeNode(10);
-        rootNode.root.right = new TreeNode(30);
-        rootNode.root.right.left = new TreeNode(20);
+        rootNode.root = new TreeNode(1);
+        rootNode.root.left = new TreeNode(2);
+        rootNode.root.left.left = new TreeNode(3);
+        rootNode.root.left.right = new TreeNode(4);
+        rootNode.root.right = new TreeNode(2);
+        rootNode.root.right.left = new TreeNode(4);
+        rootNode.root.right.right = new TreeNode(3);
+        System.out.print("\nInOrder traversal of tree : ");
         inOrderTraversal(rootNode.root);
 
         IsTreeSame rootNode1 = new IsTreeSame();
-        rootNode1.root = new TreeNode(15);
-        rootNode1.root.left = new TreeNode(5);
-        rootNode1.root.left.left = new TreeNode(1);
-        rootNode1.root.left.right = new TreeNode(10);
-        rootNode1.root.right = new TreeNode(30);
-        rootNode1.root.right.left = new TreeNode(20);
+        rootNode1.root = new TreeNode(1);
+        rootNode1.root.left = new TreeNode(2);
+        rootNode1.root.left.left = new TreeNode(3);
+        rootNode1.root.left.right = new TreeNode(4);
+        rootNode1.root.right = new TreeNode(2);
+        rootNode1.root.right.left = new TreeNode(4);
+        rootNode.root.right.right = new TreeNode(3);
+        System.out.print("\nInOrder traversal of tree : ");
         inOrderTraversal(rootNode1.root);
 
-        System.out.println(isTreeEqual(rootNode.root, rootNode1.root));
+        System.out.print("\nis Trees are equal : "+isTreeEqual(rootNode.root, rootNode1.root));
+        System.out.println("\nis Trees are Symmetric : "+isSymmetric(rootNode.root));
     }
 }
