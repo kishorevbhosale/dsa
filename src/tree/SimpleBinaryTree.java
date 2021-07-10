@@ -52,6 +52,7 @@ public class SimpleBinaryTree {
     public static boolean isValidBST(Node root) {
         return isBST(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
     }
+
     public static boolean isBST(Node root, long minValue, long maxValue) {
         if(root == null)
             return true;
