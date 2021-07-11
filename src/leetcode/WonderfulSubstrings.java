@@ -1,7 +1,5 @@
 package leetcode;
 
-import java.util.*;
-
 public class WonderfulSubstrings {
     public static void main(String[] args) {
         System.out.println(wonderfulSubstrings("aabb"));

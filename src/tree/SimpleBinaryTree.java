@@ -50,13 +50,13 @@ public class SimpleBinaryTree {
     }
 
     public static boolean isValidBST(Node root) {
-        return isBST(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+        return isBST(root, null, null);
     }
 
-    public static boolean isBST(Node root, long minValue, long maxValue) {
+    public static boolean isBST(Node root, Integer minValue, Integer maxValue) {
         if(root == null)
             return true;
-        if(root.key <= minValue || root.key >= maxValue)
+        if((minValue!=null && root.key <= minValue) || (maxValue!=null && root.key >= maxValue))
             return false;
 
         return isBST(root.left,minValue,root.key) && isBST(root.right,root.key,maxValue);

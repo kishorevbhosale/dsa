@@ -1,7 +1,5 @@
 package solid;
 
-import jdk.nashorn.internal.runtime.ECMAException;
-
 class Document{
 
 }

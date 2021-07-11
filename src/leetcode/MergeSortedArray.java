@@ -1,8 +1,5 @@
 package leetcode;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-
 public class MergeSortedArray {
     public static void main(String[] args) {
         int[] res = merge(new int[]{1,2,3,0,0,0}, 3, new int[]{2,5,6}, 3);
