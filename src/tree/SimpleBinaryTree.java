@@ -1,5 +1,7 @@
 package tree;
 
+import java.util.Collections;
+
 class Node {
     int key;
     Node left, right;
