@@ -1,4 +1,4 @@
-package corejava;
+package corejava.threading;
 
 public class ThreadUncaughtExceptionHandlerDemo {
     public static void main(String[] args) {

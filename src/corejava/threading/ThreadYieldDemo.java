@@ -1,4 +1,4 @@
-package corejava;
+package corejava.threading;
 
 public class ThreadYieldDemo {
     public static void main(String[] args) {

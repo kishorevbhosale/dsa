@@ -1,4 +1,4 @@
-package corejava;
+package corejava.threading;
 
 class JoinThread implements Runnable{
     static Thread mainThread;
