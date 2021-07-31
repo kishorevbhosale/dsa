@@ -24,6 +24,7 @@ class PrintJob implements Runnable {
 
 public class ThreadPoolExecutorDemo {
     public static void main(String[] args) {
+        System.out.println("Available ThreadPool size = "+Runtime.getRuntime().availableProcessors());
         PrintJob[] jobs = {new PrintJob("job1"),
                 new PrintJob("job2"),
                 new PrintJob("job3"),

@@ -2,9 +2,7 @@ package solid.proxy;
 
 interface PayBill {
     void payPhonePe(int amount);
-
     void payAmazon(int amount);
-
     void payGPay(int amount);
 }
 
